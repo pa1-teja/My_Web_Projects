@@ -64,30 +64,28 @@ and open the template in the editor.
             color: #fff !important;
         }
         
-        .css_top_pad{
-         padding-top: 10%;   
+        body{
+            position: relative;
         }
         
         </style>
     
-        <link rel="stylesheet" href="css/tab_style.css" media="screen and (max-width: 980px)">
-        
     </head>
     <body>
            <header>
 
-          <!--Navbar-->
-        <nav id="nav_home" class=" navbar navbar-expand-lg navbar-dark elegant-color-dark fixed-top">
+        <!--Navbar-->
+        <nav id="nav_home" class=" nav navbar navbar-expand-lg navbar-dark elegant-color-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Navbar</a>
+                <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" 
                         data-toggle="collapse" data-target="#navbarSupportedContent" 
                         aria-controls="navbarSupportedContent" aria-expanded="false" 
                         aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
+                <div class="nav collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class=" nav nav-pills navbar-nav mr-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html" >Home</a>
                         </li>
@@ -113,16 +111,31 @@ and open the template in the editor.
             </div>
         </nav>
         <!--/.Navbar-->
+
+        <!--Intro Section-->
+        <section class="view intro-1 hm-black-strong">
+            <div class="full-bg-img flex-center">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <h1 class="h1-responsive font-bold wow fadeInDown" data-wow-delay="0.2s">Welcome</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+     
     </header>
         
         <main>
-            <div class="container-fluid">
+            <div class="container">
              <header>
                  <!--Page heading-->
-                  <div class="row css_top_pad">
+                  <div class="row">
                       <div class="col-md-12">
                           <h1 class="h1-responsive">JAVA
-                          <small class="text-muted css_custom_hide_tab_style">The Programming Language to build Software applications.</small>
+                          <small class="text-muted">The Programming Language to build Software applications.</small>
                            </h1>
                        </div>
                   </div>
@@ -131,15 +144,6 @@ and open the template in the editor.
                </header>
               
                 <section class="container">
-                     <div class="row">
-                      <div class="col-md-12">
-                          <h1 class="h1-responsive">Chapter-1
-                          <small class="text-muted">(Software Development & Object-Oriented Programming Paradigms)</small>
-                           </h1>
-                       </div>
-                  </div>
-                        <!--/.Page heading-->
-                        <hr>
                      <!--First row-->
             <div class="row mt-5 wow">
                 
@@ -153,14 +157,13 @@ and open the template in the editor.
                         <!--<img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(43).jpg" alt="Card image cap">-->
 
                         <!--Card content-->
-                        <div class="card-body ">
-                            <a href="introduction_to_java.html">
+                        <div class="card-body">
                             <!--Title-->
                             <h4 class="card-title">JAVA Introduction</h4>
                             <!--Text-->
                             <p class="card-text">Learn what is JAVA, Why is it so popular, It's features & Advantages.</p>
                             <!--<a href="#" class="btn btn-primary">Button</a>-->
-                            </a>
+                            
                         </div>
 
                     </div>
@@ -309,17 +312,15 @@ and open the template in the editor.
         
     <!--SCRIPTS-->    
 
-   <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-
-    <!-- Bootstrap dropdown -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script async type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script  async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/js/mdb.min.js" crossorigin="anonymous"></script>
+   
     <script>
     new WOW().init();
     </script>

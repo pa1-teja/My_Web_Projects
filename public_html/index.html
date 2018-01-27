@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
           crossorigin="anonymous">
     
-    <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+     <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
@@ -35,14 +35,10 @@
 
         .navbar .btn-group .dropdown-menu a:active {
             color: #fff !important;
-        }
-        
-        body{
-            position: relative;
-        }
-        
+        }     
     </style>
     
+    <link href="css/tab_style.css" rel="stylesheet" media="screen and (max-width: 980px)">
 </head>
 
 <body >
@@ -51,19 +47,19 @@
     <header>
 
         <!--Navbar-->
-        <nav id="nav_home" class=" nav navbar navbar-expand-lg navbar-dark elegant-color-dark fixed-top">
+        <nav id="nav_home" class=" navbar navbar-expand-lg navbar-dark elegant-color-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#home">Navbar</a>
                 <button class="navbar-toggler" type="button" 
                         data-toggle="collapse" data-target="#navbarSupportedContent" 
                         aria-controls="navbarSupportedContent" aria-expanded="false" 
                         aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="nav collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class=" nav nav-pills navbar-nav mr-auto">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#" >Home</a>
+                            <a class="nav-link" href="#home" >Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about_me">About Me</a>
@@ -90,7 +86,7 @@
 
         <!--Intro Section-->
         <section class="view intro-1 hm-black-strong">
-            <div class="full-bg-img flex-center">
+            <div id="home" class="full-bg-img flex-center">
                 <div class="container">
                     <ul>
                         <li>
@@ -105,7 +101,7 @@
     </header>
 
      <!--Main container-->
-    <div class="container" data-spy="scroll" data-target="#nav_home" data-offset="0" >
+     <div class="container" data-spy="scroll" data-target="#nav_home" data-offset="0" >
 
         <div  class="divider-new pt-5">
             <h2 id="about_me" class="h2-responsive wow fadeIn" data-wow-delay="0.2s">About Me</h2>
@@ -136,13 +132,13 @@
                 <div class="col-lg-6 mb-r">
 
                     <!--Card-->
-                    <div class="card wow fadeIn">
+                    <div class="card rounded wow fadeIn">
                         <a href="java_course_syllabus.html">
                         <!--Card image-->
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20(25).jpg" alt="Card image cap">
+                        <img class="img-fluid css_custom_hide_tab_style" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20(25).jpg" alt="Card image cap">
 
                         <!--Card content-->
-                        <div class="card-body">
+                        <div class="card-body hoverable css_custom_background">
                             
 <!--                            Title-->
                             <h4 class="card-title text-center">Java</h4>
@@ -168,13 +164,14 @@
                 <!--Second columnn-->
                 <div class="col-lg-6 mb-r">
                     <!--Card-->
-                    <div class="card wow fadeIn" data-wow-delay="0.2s">
+                    <div class="card wow rounded fadeIn" data-wow-delay="0.2s">
 
+                        <a href="android_app_development_course_content.html">
                         <!--Card image-->
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20(14).jpg" alt="Card image cap">
+                        <img class="img-fluid css_custom_hide_tab_style" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20(14).jpg" alt="Card image cap">
 
                         <!--Card content-->
-                        <div class="card-body">
+                        <div class="card-body css_custom_background">
                             <!--Title-->
                             <h4 class="card-title text-center">Android</h4>
                             <hr>
@@ -188,7 +185,7 @@
                                 (ex: Smart phones,Tablets, Watches, TVs etc.).
                             </p>
                         </div>
-
+                        </a>
                     </div>
                     <!--/.Card-->
                 </div>
@@ -356,15 +353,20 @@
     </script>
   
 
+    <!-- SCRIPTS -->
+
     <!-- JQuery -->
-    <script  type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+    <!-- Bootstrap dropdown -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
 
     <!-- Bootstrap core JavaScript -->
-    <script async type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
     <!-- MDB core JavaScript -->
-    <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/js/mdb.min.js" crossorigin="anonymous"></script>
-   
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
    
     <script>
                                                                                                                                                                                                                                                                                                                                                                         $(document).ready(function(){

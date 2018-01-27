@@ -1,0 +1,17 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 24, 2018, 12:16:42 PM
+    Author     : PAVAN
+*/
+
+.css_custom_hide_tab_style{
+    display: none;
+}
+
+.css_custom_background{
+     background: url("https://mdbootstrap.com/img/Photos/Horizontal/Work/full page/img%20(2).jpg")no-repeat center center;
+}
